@@ -18,16 +18,14 @@ import org.springframework.transaction.annotation.Transactional;
 @RequiredArgsConstructor
 public class TextSafeService {
 
-  // TODO: 14/12/2020  O Autowired deve ser usando no construcctor  e todas as variaveis devem ser delcaradas como final
-
   private final TextSafeDao dao;
 
 
-  // TODO: 14/12/2020 isto poderia ser feito em uma linha so
-  @Transactional(readOnly = true)
-  public Page<TextSafe> listAllPages(Pageable pageable) {
 
-    return dao.findAll(pageable);
+  @Transactional(readOnly = true)
+  public Page<TextSafeDTO> listAllPages(Pageable pageable) {
+
+    return dao.findAll(pageable).map(this::convertToDto);
   }
 
 

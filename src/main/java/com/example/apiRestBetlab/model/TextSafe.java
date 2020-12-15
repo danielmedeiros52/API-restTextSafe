@@ -18,9 +18,9 @@ public class TextSafe implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @NotEmpty(message = "este campo não pode estar vazio")
-    @NotNull(message = "Este campo não pode ser nulo")
-    @NotBlank(message = "este campo não pode estar em branco")
+    @NotEmpty
+    @NotNull
+    @NotBlank
     private String description;
 
 
