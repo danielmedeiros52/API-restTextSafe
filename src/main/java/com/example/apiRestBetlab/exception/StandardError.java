@@ -1,9 +1,10 @@
-package com.example.apiRestBetlab.controller.exception;
+package com.example.apiRestBetlab.exception;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
 import java.io.Serializable;
+
 @Data
 @AllArgsConstructor
 public class StandardError implements Serializable {

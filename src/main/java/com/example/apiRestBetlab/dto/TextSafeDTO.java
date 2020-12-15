@@ -9,9 +9,7 @@ import java.io.Serializable;
 @NoArgsConstructor
 public class TextSafeDTO implements Serializable {
     private Long id;
-
     private String description;
-
-
+    // TODO: 14/12/2020 remover os espacos e identar
 
 }

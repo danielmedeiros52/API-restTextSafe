@@ -1,9 +1,10 @@
-package com.example.apiRestBetlab.controller.exception;
+package com.example.apiRestBetlab.exception;
 
 import lombok.Getter;
 
 import java.util.ArrayList;
 import java.util.List;
+
 @Getter
 public class ValidationError extends StandardError {
 
